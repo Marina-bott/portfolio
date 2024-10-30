@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <script src="https://use.fontawesome.com/a9ad8567f1.js" async></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Création de site vitrine, E-commerce, Maintenance et Développement Spécifique ">
+
+    <meta name="author" content="Marina Bott">
+
+    <title>Marina Développement</title>
+    <meta property="og:url" content="https://www.marinabott.fr/index.html" />
+    <meta property="og:title" content="Marina Développement" />
+    <meta property="og:description" content="Vous êtes un Particulier ? un Professionnel ?
+	Vous souhaitez créer votre site web ?
+	Que se soit pour créer un site de présentation de votre entreprise,
+	 une boutique en ligne ou tout simplement un site type blog pour parler de ce que vous aimez, faites appel à Marina Développement!
+	Entreprise de développement web et web mobile,
+	Marina Développement créé pour vous votre site / boutique (ou les deux !) à votre image !" />
+    <meta property="og:image" content="https://www.marinabott.fr/images/banniere_fb.png" />
+    <!-- Load Facebook SDK for JavaScript -->
+
+    <!-- Mobile Specific Meta
+		================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+    <!-- CSS
+		================================================== -->
+
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="plugins/animate-css/animate.css">
+    <!-- Magnific popup css -->
+    <link rel="stylesheet" href="plugins/magnific-popup/dist/magnific-popup.css">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="plugins/themefisher-font/style.css" defer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQFNMJJRKQ"></script>
+
+</head>
+
+<body id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!--
+	    Start Preloader
+	    ==================================== -->
+    <div id="preloader">
+        <div class="preloader">
+            <div class="sk-cube-grid">
+                <div class="sk-cube sk-cube1"></div>
+                <div class="sk-cube sk-cube2"></div>
+                <div class="sk-cube sk-cube3"></div>
+                <div class="sk-cube sk-cube4"></div>
+                <div class="sk-cube sk-cube5"></div>
+                <div class="sk-cube sk-cube6"></div>
+                <div class="sk-cube sk-cube7"></div>
+                <div class="sk-cube sk-cube8"></div>
+                <div class="sk-cube sk-cube9"></div>
+            </div>
+        </div>
+    </div>
+    <!--
+        End Preloader
+        ==================================== -->
+
+
+    <!-- 
+  Fixed Navigation
+  ==================================== -->
+    <header id="navigation" class="navbar navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- responsive nav button -->
+                <!-- responsive nav button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- /responsive nav button -->
+
+                <!-- logo -->
+                <a class="navbar-brand logo" href="#body">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="143.25"
+                        height="64.5" viewBox="0 0 191 86">
+                        <image id="Calque_1" data-name="Calque 1" width="191" height="86"
+                            xlink:href="data:img/png;base64,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" />
+                    </svg>
+
+                </a>
+                <!-- /logo -->
+            </div>
+
+            <!-- main nav -->
+            <nav class="collapse navbar-collapse navbar-right" role="Navigation">
+                <ul id="nav" class="nav navbar-nav navigation-menu">
+                    <li><a data-scroll href="index.html#body">Accueil</a></li>
+                    <li><a data-scroll href="index.html#about">À propos de Marina Développement</a></li>
+                    <li><a data-scroll href="index.html#services">Services</a></li>
+                    <li><a data-scroll href="index.html#portfolio">Portfolio</a></li>
+                    <li><a data-scroll href="index.html#our-team">Présentation</a></li>
+                    <li><a data-scroll href="index.html#pricing">Tarifs</a></li>
+                    <li><a data-scroll href="index.html#blog">Blog</a></li>
+                    <li><a data-scroll href="index.html#contact-us">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- /main nav -->
+
+        </div>
+    </header>
+    <!--
+End Fixed Navigation
+==================================== -->
+
+    <!--
+		Start Section
+        ==================================== -->
+    <section id="pricing" class="pricing section">
+        <div class="container">
+            <div class="row">
+
+                <div class="title text-center wow fadeInDown" data-wow-duration="500ms"
+                    style="visibility: visible; animation-duration: 500ms; animation-name: fadeInDown;">
+                    <h2 style="font-family: Modern;">Conditions Générales de <span class="color">Ventes</span></h2>
+                    <div class="border"></div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="col-lg-12">
+
+                        <h1><strong>CONDITIONS GENERALES DE VENTE</strong></h1>
+
+                        <p>En vigueur au 02/02/2021</p>
+
+
+                        <h1>PRÉAMBULE & DÉFINITIONS</h1>
+                        <p>
+                            Les présentes Conditions Générales de Vente ont pour objet de régir les termes et conditions
+                            ainsi que les modalités selon lesquelles Marina Bott (ci-après désigné le Prestataire)
+                            fournit ses services à ses clients.<br>Les présentes Conditions Générales de Vente prévalent
+                            sur les informations commerciales affichées sur le site <a
+                                href="https://www.marinabott.fr">https://www.marinabott.fr</a>, celles-ci
+                            pouvant être amenées à être modifiées à tout moment et sans préavis, ou sur toutes autres
+                            conditions figurant dans tout autre document.
+                        </p>
+                        <p>
+                            « Prestataire » désigne Marina Bott, micro-entrepreneur, SIRET 882 745 151 000 10,
+                            dont le siège social est situé 3 rue des Hortensias, 76260, Eu.<br><br>
+
+                            « Client » désigne toute personne physique majeure ou personne morale, sollicitant les
+                            services du PRESTATAIRE. La personne ou l’entreprise signataire des présentes Conditions
+                            Générales de Vente (signature accompagnée de la mention LU EST APPROUVÉ, BON POUR ACCORD sur
+                            le devis) se
+                            porte garante du paiement de la facture même si celle-ci doit être établie au nom d’un
+                            tiers.
+                        </p>
+
+
+
+                        <h1>ARTICLE 1 - Champ d'application</h1>
+
+                        <p>Les présentes Conditions Générales de Vente (dites «CGV») s'appliquent, sans restriction ni
+                            réserve à tout achat des services suivants:</p>
+
+                        <ul>
+                            <li>Création de sites web type Vitrine<br>
+                                Création de sites web type Sur-mesure<br>
+                                Création de sites web type E-commerce<br>
+                                Maintenance<br>
+                                Développements spécifiques<br>
+                            </li>
+                        </ul>
+
+                        <p>tels que proposés par le Prestataire aux clients («Les Clients ou le
+                            Client») sur le site
+                            <a href="https://www.marinabott.fr">https://www.marinabott.fr</a>.
+                        </p>
+
+                        <p>Les caractéristiques principales des Services sont présentées sur le site internet
+                            <a href="https://www.marinabott.fr">https://www.marinabott.fr</a>.
+                        </p>
+
+                        <p>Le Client est tenu d'en prendre connaissance avant toute passation de commande.
+                            Le choix et l'achat d'un service est de la seule responsabilité du client.</p>
+
+                        <p>Ces CGV sont accessibles à tout moment sur le site <a
+                                href="https://www.marinabott.fr/cgv.html">https://www.marinabott.fr/cgv.html</a> et
+                            prévaudront sur tout autre document.
+                        </p>
+
+                        <p>Le Client déclare avoir pris connaissance des présentes CGV et les avoir acceptées à
+                            partir du moment ou il a fait une demande de devis via le formulaire de contact
+                            sur le site <a href="https://www.marinabott.fr">https://www.marinabott.fr</a> ou via tout
+                            autre mode de contact comme la messagerie Facebook de la page officielle de Marina Développement.<br>
+                            En conséquence, toute demande de devis passée par le client pour le compte du prestataire emporte
+                            acceptation et sans réserve des présentes Conditions Générales de Ventes.
+                        </p>
+
+                        <p>Sauf preuve contraire, les données enregistrées dans le système informatique du Prestataire
+                            constituant la preuve de l'ensemble des transactions conclues avec le Client.</p>
+
+                        <p>Les coordonnées du Prestataire sont les suivantes:</p>
+
+                        <p>Marina Bott</p>
+
+                        <p>3 rue des Hortensias</p>
+
+                        <p>Numéro d'immatriculation: 88274515100010
+                        </p>
+
+                        <p>courriel: marinabott.pro@gmail.com</p>
+
+                        <p>téléphone: 0782643702</p>
+
+                        <p>Des droits de douane ou autres taxes locales ou droits d'importation ou taxes d'état sont
+                            susceptibles d'être exigibles. Ils seront à la charge et relèvent de la seule
+                            responsabilité du client.
+                        </p>
+
+                        <h2>ARTICLE 1.2 - Droit de publicité</h2>
+
+                        <p>
+                            Le Client autorise le Prestataire à citer son nom et sa dénomination sociale ainsi que son
+                            URL, les copies d’écran de ses pages Web, à titre de références pour la promotion
+                            commerciale du prestataire.<br>
+
+                            Le client est informé qu’un lien vers son site sera réalisé depuis le site du Prestataire.
+                            Cela aura pour effet d’augmenter sa visibilité dans les moteurs de recherches. Le Client
+                            peut s’opposer à cette mesure par simple mail au prestataire.
+                        </p>
+
+
+
+                        <h2>ARTICLE 1.3 - Mentions pied de page</h2>
+
+                        <p>
+                            Le client s’engage à faire figurer en bas de chaque page de son site web la mention
+                            discrète « Site réalisé par Marina Développement » éventuellement accompagné d’un lien
+                            pointant
+                            vers <a href="https://www.marinabott.fr">https://www.marinabott.fr</a> et de son logo.
+                        </p>
+
+                        <h1>ARTICLE 2 - Prix</h1>
+
+                        <p>Les Services sont fournis aux tarifs en vigueur figurant sur le site
+                            <a href="https://www.marinabott.fr">https://www.marinabott.fr</a>, lors de
+                            l'enregistrement de la commande par le Prestataire.
+                        </p>
+
+                        <p>Les prix sont exprimés en Euros et TTC (TVA non applicable, article 293B du CGI).</p>
+
+                        <p>Les tarifs tiennent compte d'éventuelles réductions qui seraient consenties par le
+                            Prestataire sur le site
+                            <a href="https://www.marinabott.fr">https://www.marinabott.fr</a>.
+                        </p>
+
+                        <p>Ces tarifs sont fermes et non révisables pendant leur période de validité mais le Prestataire
+                            se réserve le droit,
+                            hors période de validité, d'en modifier les prix à tout moment.
+                        </p>
+
+                        <p>Les prix n'incluent pas un éventuel ajout dans la prestation, à la
+                            demande du client, dans le projet qui ne serait pas compris dans le forfait choisi, tel que
+                            un Développement spécifique nécessitant plus de travail ou tout autre demande d'ajout qui
+                            nécessiterait plus de temps de travail, dans les conditions décrites sur le site.</p>
+
+                        <p>Le paiement demandé au client correspond au montant total de l'achat, y compris ces frais.
+                        </p>
+
+                        <p>Une facture est établie par le Prestataire et remise au Client lors de la fourniture des
+                            Services commandés.</p>
+
+                        <p>
+                            Les devis établis par le Prestataire sont valables pour une durée de 30 jours après leur
+                            établissement.
+                        </p>
+
+
+                        <h2>ARTICLE 2.1- Transfert de propriété</h2>
+
+                        <h3>Paiement au Forfait (paiement comptant) :</h3>
+                        <p>
+                            Les travaux réalisés restent l’entière propriété du Prestataire jusqu’au paiement intégral
+                            de la facture correspondante (paiement au forfait / comptant).<br>Le transfert de propriété
+                            du
+                            Prestataire vers le Client s’effectue à compter du règlement du solde restant dû par le
+                            Client.
+                        </p>
+
+                        <h3>Paiement par abonnement ( 12 fois sans frais) :</h3>
+
+                        <p>Si le Client a souscrit un contrat de paiement en 12 fois sans frais, les travaux réalisés
+                            deviennent
+                            la propriété du Client à la livraison du ou des Services. Dans ce cas, le Prestataire sera
+                            totalement dégagée
+                            de toutes responsabilités du ou des Services après leurs fourniture.
+                        </p>
+
+                        <p>Le Prestataire se réserve le droit de suspendre ou d'annuler sans aucun délais ni
+                            indémnisations au Client
+                            le ou les Services fournis via le contrat de paiement en 12 fois sans frais si, pendant la
+                            durée du dit contrat,
+                            le Prestataire se rends compte du non respect du Client de la législation, des lois en
+                            vigueur concernant l'Internet,
+                            des autorisations légales et réglementaires ou tout autre non respect des Normes en vigueur.
+                        </p>
+
+                        <h2>ARTICLE 2.2- Accés administrateur</h2>
+                        <p>
+                            Si le Client a souscrit au paiement en 12 fois, il bénéficiera d'un accés
+                            administrateur pendant les 12 mois afin d'administrer son site ( thème, produits etc..) si
+                            il est conçu via un CMS.
+                        </p>
+
+                        <h2>ARTICLE 2.3- Hébergement du site</h2>
+                        <p>
+                            Marina Développement travail en partenariat avec 1&1 IONOS, le plus grand hébergeur européen, fort de 20 ans d'expérience.
+                            Votre site sera donc héberger chez 1&1 IONOS pendant les 12 mois d'hébergement offert.
+                            Votre site disposera d'un nom de domaine, 50Go d'espace Web (modifiable en supplément à la demande du client) ainsi qu'une adresse e-mail professionnelle.<br>
+                            Une fois l'abonnement offert de 12 mois arrivé à sa fin, le Prestataire transférera la propriété de l'hébergement et du domaine au Client.<br>
+                            Le Prestataire se réserve le droit de stopper à tout moment l'hébergement et de ce faite la mise en ligne du ou des services
+                             en cas de mauvais paiement de la part du Client que ce soit via la paiement au forfait (paiement comptant) ou via l'abonnement (paiement 12 fois sans frais).
+                        </p>
+
+                        <h1>ARTICLE 3 - Commandes</h1>
+
+                        <p>Il appartient au Client de sélectionner sur le site <a
+                                href="https://www.marinabott.fr">https://www.marinabott.fr</a> les Services
+                            qu'il désire commander, selon les modalités suivantes:
+                        </p>
+
+                        <p>Le client a choisi un service qu'il a rencontré sur le site <a
+                                href="https://www.marinabott.fr">https://www.marinabott.fr</a>,<br>
+                            il contacte ensuite le Prestataire via le formulaire de contact du site
+                            en formulant sa demande de prestation (devis).<br>
+                            Le prestataire reçoit un e-mail contenant la demande du client.<br><br>
+                            Si la demande de prestation est au forfait (paiement comptant):<br><br>
+                            - Le prestataire envoie un devis récapitulatif de la
+                            demande de prestation par mail.<br>
+                            - Si le client accepte le devis, il le renvois signer (signature accompagnée de la
+                            mention LU ET APPROUVÉ, BON POUR ACCORD sur le devis).<br>
+                            - Le client règle un acompte de 30% du montant total de la
+                            prestation immédiatement PAR VIREMENT BANCAIRE.<br>
+                            - Le client apporte une preuve du virement bancaire (Validation du
+                            virement etc.).<br>
+                            - Le prestataire réalise la prestation selon des directives définies par le devis<br>
+                            - Quand le prestataire a terminé la réalisation de la prestation selon les directives
+                            définies par le
+                            projet, il la livre et le client règle le restant dû de la prestation.<br><br>
+                            Si la demande de prestation concerne un abonnement (paiement en 12 fois sans frais)
+                            :<br><br>
+                            - Le prestataire envoie un devis récapitulatif de la demande de prestation par mail.<br>
+                            - Le prestataire envoie également un contrat d'acceptation de paiement en 12 fois
+                            mentionnant les CGV.<br>
+                            - Si le client accepte le devis ainsi que le contrat d'acceptation de paiement en 12
+                            fois,<br>
+                            il rapporte les documents signer (signature accompagnée de la mention LU ET APPROUVÉ, BON
+                            POUR ACCORD sur le
+                            devis et le contrat d'acceptation de paiement en 12 fois).<br>
+                            - Le client règle la première mensualité immédiatement après l'acceptation
+                            du devis et du contrat d'acceptation de paiement en 12 fois PAR VIREMENT BANCAIRE.<br>
+                            - Le client apporte une preuve du virement bancaire (Validation du virement etc.).<br>
+                            - Le prestataire réalise la prestation selon des directives définies par le devis.<br>
+                            - Quand le prestataire à terminé la réalisation de la prestation selon les directives
+                            définies par le devis, il la livre.<br>
+                            - Le client s'engage à faire un virement bancaire tous les 5 du mois pendant
+                            les 11 mois restant dû après le premier paiement.
+                        </p>
+
+                        <p>La vente ne sera considérée comme valide qu'après paiement intégral du prix en cas de
+                            commande au forfait (paiement comptant) ou après acceptation signataire du contrat de
+                            paiement en 12 fois et de son premier paiement en cas de commande par abonnement.<br>
+                            Il appartient au Client de vérifier l'exactitude de la commande et de signaler immédiatement
+                            toute erreur.</p>
+
+                        <p>Toute commande passée sur le site https://www.marinabott.fr via le formulaire de contact
+                            constitue la formation d'un contrat conclu à distance entre le Client et le Prestataire.</p>
+
+                        <p>Le Prestataire se réserve le droit d'annuler ou de refuser toute commande d'un client avec
+                            lequel il existerait un litige relatif au paiement d'une commande antérieure.</p>
+
+                        <h1>ARTICLE 4 - Conditions de paiement</h1>
+
+                        <p>Le prix est payé, selon les modalités suivantes:</p>
+
+                        <ul>
+                            <li>Paiement par VIREMENT BANCAIRE sur le compte bancaire du Vendeur (dont les
+                                coordonnées sont communiquées au Client lors de la passation de la commande)</li>
+                        </ul>
+
+                        <p>Le prix est payable comptant, en totalité au jour de la fourniture des Services, intervenant
+                            selon les conditions définies à l'article « Fourniture des Prestations » et comme indiqué
+                            sur la facture remise au Client.</p>
+
+                        <p>Un acompte correspondant à 30% du prix total des Services commandés est exigé lors de la
+                            passation de la commande par le Client.
+                        </p>
+
+                        <p>Cet acompte ne pourra en aucun cas être qualifié d'arrhes.</p>
+
+                        <p>Le solde du prix est payable à la fourniture des Services, intervenant selon les conditions
+                            définies à l'article « Fourniture des Prestations » et comme indiqué sur la facture remise
+                            au Client.</p>
+
+                        <p>Toutefois, le client pourra, lorsque cette possibilité est indiquée sur le site
+                            <a href="https://www.marinabott.fr">https://www.marinabott.fr</a>, payer
+                            selon les conditions et l'échéancier suivants :
+                        </p>
+
+                        <p>en 12 fois (montant total de la prestation divisé par 12), tous les 5 du mois.</p>
+
+                        <p>Dans ce cas, en cas de retard de paiement et de versement des sommes dues par le Client
+                            au-delà des délais ci-dessus fixés, et après la date de paiement figurant sur la facture
+                            adressée à celui-ci, des pénalités de retard calculées au
+                            taux légal applicable au montant TTC du prix d'acquisition figurant sur ladite facture,
+                            seront acquises automatiquement et de plein droit au Prestataire, sans formalité aucune ni
+                            mise en demeure préalable.</p>
+
+                        <p>Le retard de paiement entraînera l'exigibilité immédiate de l'intégralité des sommes dues par
+                            le Client, sans préjudice de toute autre action que le Prestataire serait en droit
+                            d'intenter, à ce titre, à l'encontre du Client.</p>
+
+                        <p>En outre, le Prestataire se réserve le droit, en cas de non respect des conditions de
+                            paiement figurant ci-dessus, de suspendre ou d'annuler la fourniture des Services commandés
+                            par le Client.</p>
+
+                        <p>Les paiements effectués par le Client ne seront considérés comme définitifs qu'après
+                            encaissement effectif des sommes dues, par le Prestataire.</p>
+
+                        <p>Le Prestataire ne sera pas tenu de procéder à la fourniture des Services commandés par le
+                            Client si celui-ci ne lui en paye pas le prix en totalité ou ne respecte pas le contrat
+                            de paiement en 12 fois sans frais dans les conditions ci-dessus indiquées.</p>
+
+                        <h1> ARTICLE 5 - Fourniture des Prestations </h1>
+
+                        <p>Les Services commandés par le Client seront fournis selon les modalités suivantes : </p>
+
+                        <p>Services de prestations de développements web et web mobile.
+                        </p>
+
+                        <p>Les dits Services seront fournis dans les délais de fourniture des
+                            prestations qui sont établies dans
+                            le DEVIS et qui sont déterminés au cas par cas selon l'étendu des travaux.<br> Une marge de
+                            x
+                            jours peut être appliqué à l'initiative du développeur des lors qu'il en informe le client
+                            au
+                            préalable.<br>
+                        </p>
+
+                        <p>Le Prestataire s'engage à faire ses meilleurs efforts pour fournir les Services commandés par
+                            le Client, dans le cadre d'une obligation de moyen et dans les délais ci-dessus précisés.
+                        </p>
+
+                        <p>Si les Services commandés n'ont pas été fournis dans le délai définis ni dans la marge de x
+                            jours
+                            qui peut être appliqué à l'initiative du développeur des lors qu'il en a informé le client,
+                            le client pourra
+                            annuler la commande sous 10 jours APRÈS le dépassement de délai de fourniture. Après la date
+                            indicative de fourniture,
+                            pour toute autre cause que la force majeure ou le fait du Client, la vente des Services
+                            pourra être résolue à la
+                            demande écrite du Client dans les conditions prévues aux articles L 216-2, L 216-3 et L241-4
+                            du Code de la consommation. Les sommes versées par le Client lui seront alors restituées au
+                            plus tard dans
+                            les trentes jours qui
+                            suivent la date de dénonciation du contrat, à l'exclusion de toute indemnisation ou retenue.
+                        </p>
+
+                        <p>En cas de demande particulière du Client concernant les conditions de fourniture des
+                            Services, dûment acceptées par le Prestataire, les coûts y étant liés feront l'objet
+                            d'une facturation spécifique complémentaire ultérieure.</p>
+
+                        <p>A défaut de réserves ou réclamations expressément émises par le Client lors de la réception
+                            des Services, ceux-ci seront réputés conformes à la commande, en quantité et qualité.</p>
+
+                        <p>Le Client disposera d'un délai de 14 jours à compter de la fourniture des Services pour
+                            émettre des réclamations par mail ou par courrier RAR, avec tous les justificatifs y
+                            afférents, auprès du Prestataire.</p>
+
+                        <p>Aucune réclamation ne pourra être valablement acceptée en cas de non respect de ces
+                            formalités et délais par le Client.</p>
+
+                        <p>Le Prestataire remboursera ou rectifiera dans les plus brefs délais et à ses frais les
+                            Services dont le défaut aura été dûment prouvé par le Client.</p>
+
+                        <h1> ARTICLE 6 - Droit de rétractation </h1>
+
+                        <p>PROFESSIONNELS :</p>
+
+                        <p>Le délai de rétractation n’est pas de rigueur entre professionnels.
+                        </p>
+
+                        <p>PARTICULIERS :</p>
+
+                        <p>Selon les modalités de l’article L221-18 du Code de la Consommation «Le consommateur dispose
+                            d'un délai de quatorze jours pour exercer son droit de rétractation d'un contrat conclu à
+                            distance, à la suite d'un démarchage téléphonique ou hors établissement, sans avoir à
+                            motiver sa
+                            décision ni
+                            à supporter d'autres coûts que ceux prévus aux articles L.221-23 à L. 221-25.<br>
+                            Le délai mentionné au premier alinéa court à compter du jour :<br>
+                            1° De la conclusion du contrat, pour les contrats de prestation de services et ceux
+                            mentionnés à l'article L. 221-4;<br><br>
+                        </p>
+
+                        <p>Le droit de rétractation peut être exercé par courrier / courriel adressé au Prestataire aux
+                            coordonnées postales ou mail
+                            indiquées à l’ARTICLE 1 des présentes CGV.</p>
+
+                        <p>En cas d'exercice du droit de rétractation dans le délai susvisé, seul le prix des sommes
+                            déjà versées est remboursé.
+                        </p>
+
+                        <p>Le remboursement des sommes effectivement réglées par le Client sera effectué dans un délai
+                            de 14 jours à compter de
+                            la réception, par le Prestataire, de la notification de la rétractation du Client.</p>
+
+                        <h1> ARTICLE 7 - Responsabilité du Prestataire - Garanties </h1>
+
+                        <p>Le Prestataire garantit, conformément aux dispositions légales et sans paiement
+                            complémentaire, le Client, contre
+                            tout défaut de conformité ou vice caché, provenant d'un défaut de conception ou de
+                            réalisation des Services commandés
+                            dans les conditions et selon les modalités suivantes :</p>
+
+                        <h2>Maintenance Corrective :</h2>
+
+                        <p>Le Prestataire s'engage à corriger les éventuels problèmes / bugs générés pendant de la
+                            prestation
+                            des lors qu'ils ont étaient générés par le Prestataire lors du développement et qu'ils n'ont
+                            pas été corriger.<br>
+                            Le Client dispose d'un délai de 7 jours après la livraison du ou des services pour signaler
+                            par mail
+                            ou par courrier au Prestataire les éventuels problèmes / bugs, au-delà de ce délai, le
+                            Prestataire décline
+                            toute responsabilité.
+                        </p>
+
+                        <p>
+                            Le Client est seul responsable de son ou ses Services des lors que ceux-ci sont mis en
+                            ligne.La
+                            responsabilité du Prestataire devient en conséquence entièrement dégagée à partir de la
+                            fourniture du ou des Services.<br>
+
+                        <p>Le Client doit savoir qu'il est civilement et pénalement responsable du contenu de son site
+                            ou des Services qu'il a commandé en cas de non respect
+                            des lois universels sur l'Internet et notamment sur la législation française.<br>
+                            Tous les éléments transmis par le Client au Prestataire lors de la prestation doivent
+                            respecter la législation
+                            et ne pas outrepasser des règles de confidentialité ou de non divulgation.</p>
+
+                        Le Client est propriétaire du ou des Services qui lui son livré et est libre de la gestion de
+                        leurs contenus et de
+                        leurs administration. Le Client déclare accepter les caractéristiques et les limites de
+                        l’Internet et reconnaît en particulier les points suivants : les données circulant sur
+                        l’Internet ne sont pas protégées, notamment contre des détournements éventuels.<br>
+
+                        Le Prestataire ne pourra en aucun cas être tenu pour responsable de problèmes liés à
+                        l’hébergement, au référencement, à la fiabilité de la transmission de données, aux temps
+                        d’accès ou à la rapidité de chargement du site internet.<br>
+
+                        Le Prestataire exécutera toujours ses prestations en respectant les normes en usage dans la
+                        profession.
+                        </p>
+
+                        <p>Le Prestataire décline toutes responsabilités en cas de :</p>
+                        <ul>
+                            <li>
+                                - Mauvaise utilisation ou négligence du Client (Sécurisation hasardeuse, transmission
+                                d'identifiants à des tiers..)
+                                - Problème indépendant du Client et du Prestataire (CMS défectueux..)
+                                - Intervention d'un autre prestataire (un tiers qui modifie le code en même temps que le
+                                Prestataire..)
+                            </li>
+                        </ul>
+
+                        <h2>ARTICLE 7.1 - Force Majeure</h2>
+
+                        <p>
+                            Le Prestataire ne saurait être tenue pour responsable de l'inexécution ou du retard
+                            d'éxécution du contrat conclu,
+                            suite à la survenance d'un événement de force majeure (au sens prévu par la Loi).
+                        </p>
+
+                        <h2>Incapacité de Travail</h2>
+
+                        <p>
+                            Le Prestataire avertira le Client dès le premier jour ouvrable de son incapacité de travail.
+
+                            En cas d’incapacité de travail, par suite de maladie ou d’accident, le Prestataire se
+                            réserve le droit de rompre les contrats en cours, et/ou modifier le délai en cours sans
+                            qu’il ne puisse être exigé par le Client une quelconque indemnitée.
+                        </p>
+
+                        <h1> ARTICLE 8 - Données personnelles </h1>
+
+                        <p>Le Client est informé que la collecte de ses données à caractère personnel est nécessaire à
+                            la vente des Services et leur réalisation et délivrance, confiées au Prestataire. Ces
+                            données à caractère
+                            personnel sont récoltées uniquement pour l’exécution du contrat de prestations de services.
+                        </p>
+
+                        <h2><strong>8.1 Collecte des données à caractère personnel</strong></h2>
+
+                        <p>Les données à caractère personnel qui sont collectées sur le site https://www.marinabott.fr
+                            sont les suivantes :</p>
+
+                        <p><strong>Formulaire de Contact :</strong></p>
+
+                        <p>Lors de la demande de devis via le formulaire de contact sur le site
+                            https://www.marinabott.fr :</p>
+
+                        <p>Nom, Prénom, Adresse e-mail.</p>
+
+                        <p><strong>Demande de Prestations :</strong></p>
+
+                        <p>Lors de la commande de Prestations par le Client :</p>
+
+                        <p>nom, prénom, dénomination sociale, adresse postale, adresse e-mail, numéro de téléphone,
+                            identifiants de connexion à l'hébergeur du site et/ou identifiants de connexion au site web
+                            (CMS).</p>
+
+                        <p><strong>Paiement</strong></p>
+
+                        <p>Les paiements des Prestations proposés sur le site <a
+                                href="https://www.marinabott.fr">https://www.marinabott.fr</a>ne sont faits que par
+                            VIREMENT BANCAIRE par le client et donc, le Prestataire n'enregistre aucunes données
+                            financières relatives au compte bancaire ou à la carte de crédit du Client /
+                            utilisateur.</p>
+
+                        <h2><strong>8.2 Destinataires des données à caractère personnel</strong></h2>
+
+                        <p>Les données à caractère personnel sont réservées à l’usage unique du Prestataire et de
+                            ses salariés.</p>
+
+                        <p><strong>8.3 Responsable de traitement</strong></p>
+
+                        <p>Le responsable de traitement des données est le Prestataire, au sens de la loi
+                            Informatique et libertés et à compter du 25 mai 2018 du Règlement 2016/679 sur la protection
+                            des données à caractère personnel.</p>
+
+                        <h2><strong>8.4 limitation du traitement</strong></h2>
+
+                        <p>Sauf si le Client exprime son accord exprès, ses données à caractère personnelles ne sont pas
+                            utilisées à des fins publicitaires ou marketing.</p>
+
+                        <h2><strong>8.5 Durée de conservation des données</strong></h2>
+
+                        <p>Le Prestataire conservera les données ainsi recueillies uniquement pendant la durée du
+                            contrat.</p>
+
+                        <h2><strong>8.6 Sécurité et confidentialité</strong></h2>
+
+                        <p>Le Prestataire met en œuvre des mesures organisationnelles, techniques, logicielles et
+                            physiques en matière de
+                            sécurité du numérique pour protéger les données personnelles contre les altérations,
+                            destructions et accès non
+                            autorisés. Toutefois il est à signaler qu’Internet n’est pas un environnement complètement
+                            sécurisé et le Prestataire
+                            ne peut garantir la sécurité de la transmission ou du stockage des informations sur
+                            Internet.</p>
+
+                        <h2><strong>8.7 Mise en œuvre des droits des Clients et utilisateurs</strong></h2>
+
+                        <p>En application de la règlementation applicable aux données à caractère personnel, les Clients
+                            et utilisateurs du
+                            site <a href="https://www.marinabott.fr">https://www.marinabott.fr</a> disposent des droits
+                            suivants :</p>
+                        <ul>
+                            <li> Ils peuvent mettre à jour ou supprimer les données qui les concernent de la manière
+                                suivante : </li>
+                        </ul>
+                        <ul>
+                            <li> Ils peuvent supprimer leur compte en écrivant à l’adresse électronique indiqué à
+                                l’article 9.3 « Responsable
+                                de traitement » </li>
+                        </ul>
+                        <ul>
+                            <li> Ils peuvent exercer leur droit d’accès pour connaître les données personnelles les
+                                concernant en écrivant à
+                                l’adresse indiqué à l’article 9.3 « Responsable de traitement » </li>
+                        </ul>
+                        <ul>
+                            <li> Si les données à caractère personnel détenues par le Prestataire sont inexactes,
+                                ils peuvent demander la
+                                mise à jour des informations des informations en écrivant à l’adresse indiqué à
+                                l’article 9.3 « Responsable de
+                                traitement » </li>
+                        </ul>
+                        <ul>
+                            <li> Ils peuvent demander la suppression de leurs données à caractère personnel,
+                                conformément aux lois applicables en
+                                matière de protection des données en écrivant à l’adresse indiqué à l’article 9.3
+                                « Responsable de
+                                traitement » </li>
+                        </ul>
+                        <ul>
+                            <li> Ils peuvent également solliciter la portabilité des données détenues par le
+                                Prestataire vers un autre
+                                prestataire </li>
+                        </ul>
+                        <ul>
+                            <li> Enfin, ils peuvent s’opposer au traitement de leurs données par le Prestataire
+                            </li>
+                        </ul>
+                        <p>Ces droits, dès lors qu’ils ne s’opposent pas à la finalité du traitement, peuvent être
+                            exercé en adressant une
+                            demande par courrier ou par E-mail au Responsable de traitement dont les coordonnées sont
+                            indiquées ci-dessus.</p>
+
+                        <p>Le responsable de traitement doit apporter une réponse dans un délai maximum d’un mois.</p>
+
+                        <p>En cas de refus de faire droit à la demande du Client, celui-ci doit être motivé.
+                        </p>
+
+                        <p>Le Client est informé qu’en cas de refus, il peut introduire une réclamation auprès de la
+                            CNIL (3 place de Fontenoy,
+                            75007 PARIS) ou saisir une autorité judiciaire.</p>
+
+                        <p>Le Client peut être invité à cocher une case au titre de laquelle il accepte de recevoir des
+                            mails à caractère
+                            informatifs et publicitaires de la part du Prestataire. Il aura toujours la possibilité de
+                            retirer son accord à tout
+                            moment en contactant le Prestataire (coordonnées ci-dessus) ou en suivant le lien de
+                            désabonnement.</p>
+
+                        <h1> ARTICLE 9 - Propriété intellectuelle </h1>
+
+                        <p>Le contenu du site https://www.marinabott.fr est la propriété du Vendeur et de ses
+                            partenaires et est protégé
+                            par les lois françaises et internationales relatives à la propriété intellectuelle.</p>
+
+                        <p>Toute reproduction totale ou partielle de ce contenu est strictement interdite et est
+                            susceptible de constituer un délit de contrefaçon.</p>
+
+                        <h1> ARTICLE 10 - Droit applicable - Langue </h1>
+
+                        <p>Les présentes CGV et les opérations qui en découlent sont régies et soumises au droit
+                            français.</p>
+
+                        <p>Les présentes CGV sont rédigées en langue française. Dans le cas où elles seraient traduites
+                            en une ou plusieurs langues étrangères, seul le texte français ferait foi en cas de litige.
+                        </p>
+
+                        <h1> ARTICLE 11 - Litiges </h1>
+
+                        <p>Pour toute réclamation merci de contacter le service clientèle à l’adresse postale ou mail du
+                            Prestataire indiquée à l’ARTICLE 1 des présentes CGV.</p>
+
+                        <p>Le Client est informé qu'il peut en tout état de cause recourir à une médiation
+                            conventionnelle, auprès des instances de médiation sectorielles existantes ou à tout mode
+                            alternatif de règlement
+                            des différends (conciliation, par exemple) en cas de contestation. </p>
+
+                        <p>En l’espèce, le médiateur désigné est :</p>
+
+                        <p>Association nationale des médiateurs (ANM)</p>
+
+                        <p>62 rue Tiquetonne PARIS, 75002 France</p>
+
+                        <p>http://www.anm-conso.com</p>
+
+                        <p>E-mail : contact@anm-conso.com.</p>
+
+                        <p>Le Client est également informé qu’il peut, également recourir à la plateforme de Règlement
+                            en Ligne des Litige (RLL)
+                            :https://webgate.ec.europa.eu/odr/main/index.cfm?event=main.home.show</p>
+
+                        <p>Tous les litiges auxquels les opérations d'achat et de vente conclues en application des
+                            présentes CGV et qui n’auraient pas fait l’objet d’un règlement amiable entre le vendeur ou
+                            par médiation,
+                            seront soumis aux tribunaux compétents dans les conditions de droit commun.</p>
+
+                        <h1> <strong>ANNEXE I</strong> </h1>
+
+                        <h2> <strong><u>Formulaire de rétractation</u></strong> </h2>
+
+
+                        <p>Date ______________________</p>
+
+                        <p>Le présent formulaire doit être complété et renvoyé uniquement si le Client souhaite se
+                            rétracter de la commande passée sur <a
+                                href="https://www.marinabott.fr">https://www.marinabott.fr</a>
+                            sauf exclusions ou limites à l'exercice du droit de rétractation suivant les
+                            Conditions Générales de Vente applicables.</p>
+
+                        <p>Je notifie par la présente la rétractation du contrat portant sur la commande de la
+                            prestation de service ci-dessous:</p>
+
+                        <p>- Commande du (indiquer la date)</p>
+
+                        <p>- Numéro de la commande: ............................................ ...............</p>
+
+                        <p>- Nom du client: ............................................. ..............................
+                        </p>
+
+                        <p>- Adresse du client: ............................................. ..........................
+                        </p>
+
+                        <p>Signature du Client (uniquement en cas de notification du présent formulaire sur papier)</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div> </div>
+        <div> </div>
+        </div>
+        </div>
+        </div>
+
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!--
+		End Section
+        ==================================== -->
+
+
+
+    <!-- end Contact Area
+		========================================== -->
+
+    <footer id="footer" class="bg-one">
+        <div class="container">
+            <div class="row wow fadeInUp" data-wow-duration="500ms">
+                <div class="col-lg-12">
+
+                    <!-- Footer Social Links -->
+                    <div class="social-icon">
+                        <ul class="list-inline">
+                            <li><a href="#" class="picto-facebook-footer"></a></li>
+                            <li><a href="https://www.codeur.com/-marina-bott" target="blank"
+                                    class="picto-codeur-footer"></a></li>
+                            <li><a href="https://www.linkedin.com/in/marina-bott/" target="blank"
+                                    class="picto-linkedin-footer"></a></li>
+                            <li><a href="https://www.malt.fr/profile/marinabott" target="blank"
+                                    class="picto-malt-footer"></a></li>
+                        </ul>
+                    </div>
+                    <!--/. End Footer Social Links -->
+
+                    <!-- copyright -->
+                    <div class="copyright text-center">
+                        <a href="index.html">
+                            <img src="./images/new-logo-picto-loup191x66.png" id="logo_footer">
+                        </a>
+                        <br />
+                        <br />
+                        <p>© Copyright 2021. Marina Développement.
+                        </p>
+                    </div>
+                    <!-- /copyright -->
+
+                </div> <!-- end col lg 12 -->
+                <div class="col-lg-12" style="text-align: center;font-weight: bold;">
+                    <div class="col-lg-4"><a href="rgpd.html">Conditions d'utilisations</a></div>
+                    <div class="col-lg-4"><a href="cgv.html">Conditions Générales de ventes</a></div>
+                    <div class="col-lg-4"><a href="mentions-légales.html">Mentions Légales</a></div>
+
+                </div>
+            </div> <!-- end row -->
+        </div> <!-- end container -->
+    </footer> <!-- end footer -->
+
+    <div id="scrollUp">
+        up
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+            Essential Scripts
+            =====================================-->
+
+    <!-- Main jQuery -->
+    <script type="text/javascript" src="plugins/jquery/dist/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <!-- Bootstrap 3.1 -->
+    <script type="text/javascript" src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Slick Carousel -->
+    <script type="text/javascript" src="plugins/slick-carousel/slick/slick.min.js"></script>
+    <!-- Portfolio Filtering -->
+    <script type="text/javascript" src="plugins/mixitup/dist/mixitup.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script type="text/javascript" src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <!-- Magnific popup -->
+    <script type="text/javascript" src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <!-- Google Map API -->
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <!-- Sticky Nav -->
+    <script type="text/javascript" src="plugins/Sticky/jquery.sticky.js"></script>
+    <!-- Number Counter Script -->
+    <script type="text/javascript" src="plugins/count-to/jquery.countTo.js"></script>
+    <!-- wow.min Script -->
+    <script type="text/javascript" src="plugins/wow/dist/wow.min.js"></script>
+    <!-- Custom js -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        window.axeptioSettings = {
+            clientId: "602511bda80bfa4cdd2ed1df",
+            cookiesVersion: "marina développement-base",
+        };
+
+        (function (d, s) {
+            var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+            e.async = true; e.src = "//static.axept.io/sdk.js";
+            t.parentNode.insertBefore(e, t);
+        })(document, "script");
+    </script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
